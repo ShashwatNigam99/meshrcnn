@@ -99,8 +99,8 @@ Category ids in annotations are not in [1, #categories]! We'll apply a mapping f
 
         # examples with imgfiles = {img/table/1749.jpg, img/table/0045.png}
         # have a mismatch between images and masks. Thus, ignore
-        if img_dict["file_name"] in ["img/table/1749.jpg", "img/table/0045.png"]:
-            continue
+        # if img_dict["file_name"] in ["img/table/1749.jpg", "img/table/0045.png"]:
+        #     continue
 
         record = {}
         record["file_name"] = os.path.join(image_root, img_dict["file_name"])

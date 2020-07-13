@@ -1,3 +1,4 @@
+
 # Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
 """
 This file registers pre-defined datasets at hard-coded paths, and their metadata.
@@ -15,27 +16,35 @@ from detectron2.data import DatasetCatalog, MetadataCatalog
 
 from meshrcnn.data.datasets import load_pix3d_json
 
-
+#meta = [
+#    {"name": "bed", "color": [255, 255, 25], "id": 1},  # noqa
+#    {"name": "bookcase", "color": [230, 25, 75], "id": 2},  # noqa
+#    {"name": "chair", "color": [250, 190, 190], "id": 3},  # noqa
+#    {"name": "desk", "color": [60, 180, 75], "id": 4},  # noqa
+#    {"name": "misc", "color": [230, 190, 255], "id": 5},  # noqa
+#    {"name": "sofa", "color": [0, 130, 200], "id": 6},  # noqa
+#    {"name": "table", "color": [245, 130, 48], "id": 7},  # noqa
+#    {"name": "tool", "color": [70, 240, 240], "id": 8},  # noqa
+#    {"name": "wardrobe", "color": [210, 245, 60], "id": 9},  # noqa
+#]
 def get_pix3d_metadata():
     meta = [
-        {"name": "bed", "color": [255, 255, 25], "id": 1},  # noqa
-        {"name": "bookcase", "color": [230, 25, 75], "id": 2},  # noqa
-        {"name": "chair", "color": [250, 190, 190], "id": 3},  # noqa
-        {"name": "desk", "color": [60, 180, 75], "id": 4},  # noqa
-        {"name": "misc", "color": [230, 190, 255], "id": 5},  # noqa
-        {"name": "sofa", "color": [0, 130, 200], "id": 6},  # noqa
-        {"name": "table", "color": [245, 130, 48], "id": 7},  # noqa
-        {"name": "tool", "color": [70, 240, 240], "id": 8},  # noqa
-        {"name": "wardrobe", "color": [210, 245, 60], "id": 9},  # noqa
+        {"name" : 'BoxA', "color" : [255,255,255], "id" : 1 },
+        {"name" : 'BoxB', "color" : [255,75,27], "id" : 2 }, 
+        {"name" : 'BoxC', "color" : [25,25,25], "id" : 3 }, 
+        {"name" : 'BoxD', "color" : [55,255,25], "id" : 4 }, 
+        {"name" : 'BoxF', "color" : [25,25,25], "id" : 5 }, 
+        {"name" : 'BoxH', "color" : [5,255,55], "id" : 6 }, 
+        {"name" : 'RackA', "color" : [55,25,55], "id" : 7 }
     ]
     return meta
 
 
 SPLITS = {
     "pix3d_s1_train": ("pix3d", "pix3d/pix3d_s1_train.json"),
-    "pix3d_s1_test": ("pix3d", "pix3d/pix3d_s1_test.json"),
-    "pix3d_s2_train": ("pix3d", "pix3d/pix3d_s2_train.json"),
-    "pix3d_s2_test": ("pix3d", "pix3d/pix3d_s2_test.json"),
+    # "pix3d_s1_test": ("pix3d", "pix3d/pix3d_s1_test.json"),
+    # "pix3d_s2_train": ("pix3d", "pix3d/pix3d_s2_train.json"),
+    # "pix3d_s2_test": ("pix3d", "pix3d/pix3d_s2_test.json"),
 }
 
 
