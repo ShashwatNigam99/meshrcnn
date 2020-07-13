@@ -50,8 +50,8 @@ MODEL:
     NORMALS_LOSS_WEIGHT: 0.1
     EDGE_LOSS_WEIGHT: 1.0
 DATASETS:
-  TRAIN: ("pix3d_train",)
-  TEST: ("pix3d_train",)
+  TRAIN: ("pix3d_s1_train",)
+  # TEST: ("pix3d_train",)
 SOLVER:
   IMS_PER_BATCH: 2
   BASE_LR: 0.02
