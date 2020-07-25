@@ -49,7 +49,7 @@ class VoxelInstances:
 
     def __init__(self, voxels):
         assert isinstance(voxels, list)
-        assert torch.is_tensor(voxels[0])
+        #assert torch.is_tensor(voxels[0])
         self.data = voxels
 
     def to(self, device):

@@ -48,8 +48,8 @@ class MeshInstances:
 
     def __init__(self, meshes):
         assert isinstance(meshes, list)
-        assert torch.is_tensor(meshes[0][0])
-        assert torch.is_tensor(meshes[0][1])
+        #assert torch.is_tensor(meshes[0][0])
+        #assert torch.is_tensor(meshes[0][1])
         self.data = meshes
 
     def to(self, device):

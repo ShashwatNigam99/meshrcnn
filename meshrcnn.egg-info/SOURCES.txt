@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+meshrcnn.egg-info/PKG-INFO
+meshrcnn.egg-info/SOURCES.txt
+meshrcnn.egg-info/dependency_links.txt
+meshrcnn.egg-info/requires.txt
+meshrcnn.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+torchvision>=0.4
+fvcore
+detectron2
+pytorch3d
